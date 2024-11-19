@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="slo">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Improved bulbapedia search</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Izdelovanje TCG decka</h1>
+    <section>
+        
+        <fieldset>
+            <legend><h2>Opis željenega cilja</h2></legend>
+            <p>Tukaj lahko izdeluješ deck po svoji želji. Iščeš lahko pokemon karte glede na ime, tip, znak, <strong>ime napada ali samo preko določene besede.</strong></p>
+        </fieldset>
+    </section>
+    <section>
+        <legend><h2>Izbira filtrov</h2>
+            <div class="topnav">
+              <div class="dropdown"> 
+                <!--tukaj pridejo naprej filtri za fixne stvari, AMPAK SEM VIDU DA IME NI VAŽNO KER IME VPIŠEŠ V SEARCH BAR NE PA TUKAJ.
+                ALSO dodaj smiselne drop down opcije, in mogoče kakšne CHECKBOXe za npr tipe, ker jih je lahko več.
+                -->
+                <button class="dropbtn">Izberi me</button>
+                <div class="dropdown-content">
+                  <a href="#">Ime</a>
+                  <a href="#">Tip</a>
+                  <a href="#">Znak</a>
+                </div>
+              </div>
+              <!--
+                ALSO, naredi search bar tko da ti pomaga iskat v smislu da najde podobna imena tudi če se zmotiš alpa ti da predloge ko pišeš-->
+              <caption style="text-align: b;">Išči po imenu napada ali ključno besedo.</caption>
+                <input type="text" placeholder="Search..">
+                <div class="dropdown"> <!--tukaj pridejo naprej filtri za fixne stvari-->
+                    <button class="dropbtn">Razvrsti po</button>
+                    <div class="dropdown-content">
+                      <a href="#">Abecednem redu</a>
+                      <a href="#">Tipu</a>
+                      <a href="#">Znaku</a>
+                    </div>
+                  </div>
+            </div>
+        </legend>
+    </section>
+    <section>
+        <h2>Najdene karte</h2>
+        <p>Tukaj pride tabela, ki bo urejena po abecednem redu</p>
+        <table id="myTable">
+            <tr class="header"> <!-- tukaj bi mogli vlečt podatke iz baze ki jo imam pobrano na pc na poti c:\Users\tomazkrampf\Desktop\Personal\PROJEKTI\Pokemon\Pokemon stats - za delat ekipo - Excel
+                
+                ok sem prebral da uvozit tabelo je potreben javascript, tako da za zdej bom to pustil in se fokusiral na druge stvari.-->
+              <th>Name</th>
+              <th>Type 1</th>
+              <th>Type 2</th>
+              <th>HP</th>
+              <th>Attack</th>
+              <th>Defense</th>
+              <th>Sp. Attack</th>
+              <th>Sp. Defense</th>
+              <th>Speed</th>
+              <th>Generation</th>
+              <th>Legendary</th>
+            </tr>
+            <tr>
+              <td>Blastois</td>
+              <td>Water</td>
+              <td>?</td>
+              <td>Infinity</td>
+            </tr>
+            <tr>
+              <td>Charizard</td>
+              <td>salama</td>
+          </table>
+    </section>
+</body>
+</html>
