@@ -1,0 +1,21 @@
+Pokemon TCG deck builder (based on the attack words search)
+
+Širok opis:
+-želim narediti spletno stran, kjer bodo prikazane vse karte (slike) vseh pokemonov (ki jih imam v bazi (excel ali kje drugje) ali jih še kasneje poberem).
+-Stran bo imela več opcij in ko boš kliknil na "Naredi svoj deck" boš lahko iskal karte glede na ime pokemona, življenje (več ali manj od..), tip (voda, ogenj...), ime napada, random besedo iz attacka ("do 10 damage to benched pokemon")...
+-Da si lahko prilagajaš želim vključit iskanje in filtre in vrstni red.
+
+
+Programming opis:
+- seznam info pokemonov -> class
+	- ime
+	- tip 1 (water, fire, grass, rock...)
+	- tip 2 (water, fire, grass, rock...)
+	- hp
+	- attack name
+	- attack info
+	- ...
+- slike pokemonov -> class?
+- oseba:
+	- ko išče pokemone -> if statement da ustreza iskanemu nizu? (daš vse v male črke)
+		- odspodaj mu predlaga podobne besede
